@@ -79,7 +79,9 @@ body{
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
+  
 }
+
 
 .active,
 .demo:hover {
@@ -88,9 +90,7 @@ body{
 .numbertext img{
  width: 100%;
 }
-.column img{
-  height: 100px !important;
-}
+
 .main {
   padding-top: 30px;
 }
@@ -264,6 +264,7 @@ color: #ffffff;
   margin-left: 20px;
   background-color: #F5F6F9 !important;
 }
+
 .box-select{
   padding: 15px;
   border: 1px solid #E9E9E9;
@@ -285,8 +286,16 @@ font-size: 14px;
 border-radius: 5px;
   border: none;
 }
-.btn-soluong label{
-  padding: 3px 12px 3px 12px;
+.btn-soluong input{
+  text-align: center;
+  width: 35px;
+  border: 1px solid #E9E9E9;
+  color: #000000;
+  padding: 3px 3px 3px 3px;
+  border-radius: 5px;
+}
+.btn-soluong input:focus{
+  outline: none;
 }
 .btn-main{
   padding-top: 20px;
@@ -943,7 +952,9 @@ color: #ffffff;
   margin-left: 10px;
   background-color: #fff;
   color: #000000;
-  border-radius: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .gift-cottoc{
   padding: 5px;
@@ -976,6 +987,7 @@ color: #ffffff;
 .name-item-gift{
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 .item-name-gift h5{
   font-weight: 500;
@@ -1057,14 +1069,14 @@ input[type="radio"]:checked + label::after {
 }
 .box-sp-sticky{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .name-box-sp .name-product h5{
   font-size: 16px;
   margin-bottom: 0;
 }
 .name-box-sp{
-  margin-left: 5px;
+ margin-right: 30px;
 }
 .btn-sp-box .item-btn .btn-cart{
   height: 70px;
@@ -1113,6 +1125,17 @@ input[type="radio"]:checked + label::after {
 .btn-soluong label{
   border: 1px solid #F5F6F9;
 border-radius: 5px;
+}
+.tt{
+  position: relative;
+}
+
+.play{
+  cursor: pointer;
+  height: auto !important;
+  position: absolute;
+  top: 30%;
+  left: 25%;
 }
 @media(max-width : 1400px){
   .btn-cart{

@@ -17,6 +17,58 @@
     
   </head>
   <body>
+    <div class="stickk  sticky-top ">
+      <div class="box-sp-sticky hidden" id="box-sp-sticky">
+        <div class="img-box-sp">
+          <img src="./img/img-box.png" alt="">
+        </div>
+        <div class="name-box-sp">
+          <div class="name-product ">
+            <h5>Nước Tẩy Trang Làm Sạch Sâu 3 In   1 L'Oreal Micellar Water  Deep Cleansing</h5>
+          </div>
+          <div class="price price-spsss ">
+            <div class="item-price price-sp">
+              <h1> 339.000 đ </h1>
+            </div>
+            <div class="item-price second second2 price-sps">
+              <h3>400.000 đ</h3>
+            </div>
+            <div class="item-price second second3 price-spss">
+              <h5>-15%</h5>
+            </div>
+            
+          </div>
+          <div class="giamgia spssss ">
+            <h5>(Tiết Kiệm: <b>61.000đ</b> )</h5>
+          </div>
+        </div>
+        <div class="btn-soluong btn-soluong-box">
+          <button onclick="handleMinus()" >-</button>
+          <input id="amount" type="text" value="1" readonly>
+          <button onclick="handlePlus()">+</button>
+        </div>
+        <div class="btn-sp-box">
+          <div class="item-btn">
+            <button class="btn-cart"><img src="./img/shopping-cart 19.svg" alt="">THÊM VÀO GIỎ HÀNG</button>
+          </div>
+          <div class="item-btn">
+            <button class="btn-cart black"><img src="./img/Black.svg" alt="">MUA NGAY</button>
+          </div>
+        </div>
+        
+      </div>
+      <div class="containers">
+        <ul class="list-danhmuc hidden " id="list">
+          <li class="first" ><a class="first-list item-danhmuc " href="#thongtin">Thông tin sản phẩm</a></li>
+          <li><a class="item-danhmuc" href="#thongso">Thông số sản phẩm</a></li>
+          <li><a class="item-danhmuc"  href="#thanhphan">Thành phần sản phẩm</a></li>
+          <li><a class="item-danhmuc"  href="#huongdan">Hướng dẫn sử dụng</a></li>
+          <li><a class="item-danhmuc"  href="#danhgia">Đánh giá</a></li>
+        </ul>
+      </div>
+     
+    </div>
+   
     <div class="containers">
       <div class="name-page">
         <h5> Trang chủ / Nước tẩy trang / Nước Tẩy Trang Làm Sạch Sâu 3 In 1 L'oreal Micellar Water Deep Cleansing</h5>
@@ -61,7 +113,8 @@
               <div class="column">
                 <img class="demo cursor" src="./img/image 128.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
               </div>
-              <div class="column">
+              <div class="column tt">
+                <img src="./img/play-button 1.png"  alt="" class="play">
                 <img class="demo cursor" src="./img/image 129.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
               </div>
               <div class="column">
@@ -145,9 +198,9 @@
             <h5>Số lượng: </h5>
           </div>
           <div class="btn-soluong z">
-            <button>-</button>
-            <label for="">1</label>
-            <button>+</button>
+            <button onclick="handleMinus2()" >-</button>
+            <input  type="text" id="amount2" value="1" readonly>
+            <button onclick="handlePlus2()" >+</button>
           </div>
           <div class="btn-main z">
             <div class="item-btn">
@@ -167,53 +220,15 @@
 
       <div class="row-main row">
         <div class="main-sp col-12 col-md-9">
-          <div class="box-sticky sticky-top " id="box-sticky">
-            <div class="box-sp-sticky  hidden" id="box-sp-sticky">
-              <div class="img-box-sp">
-                <img src="./img/img-box.png" alt="">
-              </div>
-              <div class="name-box-sp">
-                <div class="name-product ">
-                  <h5>Nước Tẩy Trang Làm Sạch Sâu 3 In  <br> 1 L'Oreal Micellar Water  Deep Cleansing</h5>
-                </div>
-                <div class="price price-spsss ">
-                  <div class="item-price price-sp">
-                    <h1> 339.000 đ </h1>
-                  </div>
-                  <div class="item-price second second2 price-sps">
-                    <h3>400.000 đ</h3>
-                  </div>
-                  <div class="item-price second second3 price-spss">
-                    <h5>-15%</h5>
-                  </div>
-                  
-                </div>
-                <div class="giamgia spssss ">
-                  <h5>(Tiết Kiệm: <b>61.000đ</b> )</h5>
-                </div>
-              </div>
-              <div class="btn-soluong btn-soluong-box">
-                <button>-</button>
-                <label for="">1</label>
-                <button>+</button>
-              </div>
-              <div class="btn-sp-box">
-                <div class="item-btn">
-                  <button class="btn-cart"><img src="./img/shopping-cart 19.svg" alt="">THÊM VÀO GIỎ HÀNG</button>
-                </div>
-                <div class="item-btn">
-                  <button class="btn-cart black"><img src="./img/Black.svg" alt="">MUA NGAY</button>
-                </div>
-              </div>
-              
-            </div>
-            <ul class="list-danhmuc ">
+          <div class="box-sticky  " id="box-sticky">
+            <ul class="list-danhmuc  " >
               <li class="first" ><a class="first-list item-danhmuc " href="#thongtin">Thông tin sản phẩm</a></li>
               <li><a class="item-danhmuc" href="#thongso">Thông số sản phẩm</a></li>
               <li><a class="item-danhmuc"  href="#thanhphan">Thành phần sản phẩm</a></li>
               <li><a class="item-danhmuc"  href="#huongdan">Hướng dẫn sử dụng</a></li>
               <li><a class="item-danhmuc"  href="#danhgia">Đánh giá</a></li>
             </ul>
+           
           </div>
           
           <div class="thongtin" id="thongtin">
@@ -1545,6 +1560,9 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./slider.js"></script>
 <script src="./active.js"></script>
+
 <script src="./scroll.js"></script>
+<script src="./number.js"></script>
+<script src="./number2.js"></script>
   </body>
 </html>
